@@ -8,6 +8,21 @@
   position: relative;
   overflow: hidden;
 }
+
+a {
+  text-decoration: none; /* Quita el subrayado del enlace */
+}
+
+.frame-7, .frame-8, .frame-9, .frame-10, .frame-11 {
+  cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
+  transition: background-color 0.3s ease; /* Agrega una animación de hover */
+}
+
+.frame-7:hover, .frame-8:hover, .frame-9:hover, .frame-10:hover, .frame-11:hover {
+  background: rgba(0, 0, 0, 0.1); /* Cambio de color al pasar el mouse */
+}
+
+
 .rectangle-2 {
   background: #ffffff;
   border-radius: 15px;
@@ -51,7 +66,7 @@
 .menu-completo {
   color: #ffffff;
   text-align: left;
-  font-family: "Unbounded-Bold", sans-serif;
+  font-family: "Unbounded", sans-serif;
   font-size: 20px;
   font-weight: 700;
   position: absolute;
@@ -79,7 +94,7 @@
 .contactos-delivery {
   color: #ffffff;
   text-align: left;
-  font-family: "Unbounded-Bold", sans-serif;
+  font-family: "Unbounded", sans-serif;
   font-size: 20px;
   font-weight: 700;
   position: absolute;
@@ -107,7 +122,7 @@
 .tu-franquicia {
   color: #ffffff;
   text-align: left;
-  font-family: "Unbounded-Bold", sans-serif;
+  font-family: "Unbounded", sans-serif;
   font-size: 20px;
   font-weight: 700;
   position: absolute;
@@ -143,11 +158,11 @@
   top: 11px;
 }
 .viverebeneok-span {
-  font-family: "Unbounded-Light", sans-serif;
+  font-family: "Unbounded", sans-serif;
   font-weight: 300;
 }
 .viverebeneok-span2 {
-  font-family: "Unbounded-Bold", sans-serif;
+  font-family: "Unbounded", sans-serif;
   font-weight: 700;
 }
 .vivere-cono-instagram-1 {
@@ -179,11 +194,11 @@
   top: 11px;
 }
 .www-viverebene-com-ar-span {
-  font-family: "Unbounded-Light", sans-serif;
+  font-family: 'Unbounded', sans-serif;
   font-weight: 300;
 }
 .www-viverebene-com-ar-span2 {
-  font-family: "Unbounded-Bold", sans-serif;
+  font-family: 'Unbounded', sans-serif;
   font-weight: 700;
 }
 .vivere-cono-www-1 {
@@ -302,7 +317,7 @@
 .opciones {
   color: #298067;
   text-align: left;
-  font-family: "Unbounded-Bold", sans-serif;
+  font-family: 'Unbounded', sans-serif;
   font-size: 36px;
   font-weight: 700;
   position: relative;
