@@ -1,0 +1,309 @@
+.android-compact-2,
+.android-compact-2 * {
+  box-sizing: border-box;
+}
+.android-compact-2 {
+  background: #f4f4f2;
+  height: 917px;
+  position: relative;
+  overflow: hidden;
+}
+.rectangle-2 {
+  background: #ffffff;
+  border-radius: 15px;
+  width: 343px;
+  height: 679px;
+  position: absolute;
+  left: 34px;
+  top: 124px;
+}
+.rectangle-6 {
+  border-radius: 0px;
+  width: 373px;
+  height: 42px;
+  position: absolute;
+  left: 19px;
+  top: 490px;
+  overflow: visible;
+}
+.frame-4 {
+  padding: 6px 19px 6px 19px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 411px;
+  position: absolute;
+  left: -4px;
+  top: 310px;
+  overflow: hidden;
+}
+.frame-7 {
+  background: #04c386;
+  border-radius: 25px;
+  flex-shrink: 0;
+  width: 383px;
+  height: 48px;
+  position: relative;
+  overflow: hidden;
+}
+.menu-completo {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Unbounded-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 97px;
+  top: 11px;
+}
+.vivere-cono-men-1 {
+  width: 39px;
+  height: 39px;
+  position: absolute;
+  left: 5px;
+  top: 4px;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+.frame-8 {
+  background: #04c386;
+  border-radius: 25px;
+  flex-shrink: 0;
+  width: 383px;
+  height: 48px;
+  position: relative;
+  overflow: hidden;
+}
+.contactos-delivery {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Unbounded-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 63px;
+  top: 11px;
+}
+.vivere-cono-delivery-1 {
+  width: 39px;
+  height: 39px;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+.frame-9 {
+  background: #04c386;
+  border-radius: 25px;
+  flex-shrink: 0;
+  width: 383px;
+  height: 48px;
+  position: relative;
+  overflow: hidden;
+}
+.tu-franquicia {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Unbounded-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 105px;
+  top: 11px;
+}
+.vivere-cono-franquicias-2 {
+  width: 39px;
+  height: 39px;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+.frame-10 {
+  background: #04c386;
+  border-radius: 25px;
+  flex-shrink: 0;
+  width: 383px;
+  height: 48px;
+  position: relative;
+  overflow: hidden;
+}
+.viverebeneok {
+  color: #ffffff;
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 112px;
+  top: 11px;
+}
+.viverebeneok-span {
+  font-family: "Unbounded-Light", sans-serif;
+  font-weight: 300;
+}
+.viverebeneok-span2 {
+  font-family: "Unbounded-Bold", sans-serif;
+  font-weight: 700;
+}
+.vivere-cono-instagram-1 {
+  width: 39px;
+  height: 39px;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+.frame-11 {
+  background: #04c386;
+  border-radius: 25px;
+  flex-shrink: 0;
+  width: 383px;
+  height: 48px;
+  position: relative;
+  overflow: hidden;
+}
+.www-viverebene-com-ar {
+  color: #ffffff;
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 63px;
+  top: 11px;
+}
+.www-viverebene-com-ar-span {
+  font-family: "Unbounded-Light", sans-serif;
+  font-weight: 300;
+}
+.www-viverebene-com-ar-span2 {
+  font-family: "Unbounded-Bold", sans-serif;
+  font-weight: 700;
+}
+.vivere-cono-www-1 {
+  width: 39px;
+  height: 39px;
+  position: absolute;
+  left: 5px;
+  top: 4px;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+.vivere-clave-wifi-1 {
+  width: 261px;
+  height: 21px;
+  position: absolute;
+  left: 75px;
+  top: 842px;
+  overflow: hidden;
+  aspect-ratio: 261/21;
+}
+.capa-2 {
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.vivere-estrellita-1 {
+  width: 25px;
+  height: 26px;
+  position: absolute;
+  left: 321px;
+  top: 790px;
+  overflow: hidden;
+}
+.capa-22 {
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.vivere-estrellita-2 {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 61px;
+  top: 151px;
+  overflow: hidden;
+  aspect-ratio: 1;
+}
+.capa-23 {
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.capa-24 {
+  width: 220px;
+  height: 76.98px;
+  position: absolute;
+  left: 93px;
+  top: 683px;
+  aspect-ratio: 220/76.98;
+}
+.vivere-nuestras-1 {
+  width: 125px;
+  height: 37px;
+  position: absolute;
+  left: 148px;
+  top: 202px;
+  overflow: hidden;
+  aspect-ratio: 125/37;
+}
+.capa-25 {
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.vivere-vasito-1 {
+  width: 111px;
+  height: 110px;
+  position: absolute;
+  left: 266px;
+  top: 69px;
+  overflow: hidden;
+  aspect-ratio: 111/110;
+}
+.dise-o {
+  width: 99.99%;
+  height: 100.02%;
+  position: absolute;
+  right: 0.01%;
+  left: 0%;
+  bottom: -0.01%;
+  top: -0.02%;
+  overflow: visible;
+}
+.frame-6 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 236px;
+  height: 49px;
+  position: absolute;
+  left: 93px;
+  top: 237px;
+  aspect-ratio: 236/49;
+}
+.opciones {
+  color: #298067;
+  text-align: left;
+  font-family: "Unbounded-Bold", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+}
