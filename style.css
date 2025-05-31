@@ -9,7 +9,7 @@
 .android-compact-6 {
   background: #f6f6f3;
   padding: 10px 14px;
-  width: 345.5px;       /* Ancho base de diseño */
+  width: 360.5px;       /* Ancho base de diseño */
   height: 655px;        /* Alto base de diseño */
   position: relative;
   overflow: hidden;
@@ -158,7 +158,7 @@
   color: #ffffff;
   text-align: center;
   font-family: "Unbounded", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   position: relative;
 }
@@ -182,7 +182,7 @@
   color: #ffffff;
   text-align: center;
   font-family: "Unbounded", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
   position: relative;
 }
@@ -285,11 +285,49 @@
 /* Para pantallas pequeñas (por ejemplo, móviles de menor ancho)
    Se escala todo el contenedor de diseño de manera proporcional.
    De esta forma se respeta la posición de las imágenes y el texto dentro de los botones. */
+/* 1. Para pantallas muy pequeñas (menores o iguales a 360px)
+   Se escala todo el contenedor para que se ajuste y respete la maquetación original. */
 @media (max-width: 360px) {
   .android-compact-6 {
     transform: scale(calc(100vw / 332.5));
     transform-origin: top center;
-    /* Ajustamos la altura para que el contenedor escalado no genere scroll vertical innecesario */
     height: calc(655px * (100vw / 332.5));
+  }
+}
+
+/* 2. Para pantallas medianas (entre 361px y 768px)
+   Se dejan las dimensiones originales y se centra el contenedor. */
+@media (min-width: 361px) and (max-width: 768px) {
+  .android-compact-6 {
+    transform: none;
+    width: 360.5px;
+    height: 769px;
+    margin: 0 auto;
+  }
+
+  /* Opcional: ajustar tamaños de fuente si es necesario */
+  .men-completo,
+  .contacto-delivery,
+  .tu-franquicia,
+  .www-viverebene-com-ar {
+    font-size: 14px;
+  }
+}
+
+/* 3. Para pantallas grandes móviles (mayor a 768px)
+   Se mantiene el diseño original centrado. Además, pueden incrementarse los tamaños de fuente para mayor legibilidad. */
+@media (min-width: 769px) {
+  .android-compact-6 {
+    transform: none;
+    width: 332.5px;
+    height: 655px;
+    margin: 0 auto;
+  }
+
+  .men-completo,
+  .contacto-delivery,
+  .tu-franquicia,
+  .www-viverebene-com-ar {
+    font-size: 20px;
   }
 }
