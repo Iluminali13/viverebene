@@ -1,32 +1,40 @@
+/* ========== ESTILOS BASE ========== */
 .android-compact-6,
 .android-compact-6 * {
   box-sizing: border-box;
 }
+
+/* Contenedor principal con dimensiones de diseño.
+   Se usa max-width para que en pantallas grandes siga centrado. */
 .android-compact-6 {
   background: #f6f6f3;
-  padding: 10px 14px 10px 14px;
-  height: 655px;
+  padding: 10px 14px;
+  width: 345.5px;       /* Ancho base de diseño */
+  height: 655px;        /* Alto base de diseño */
   position: relative;
   overflow: hidden;
+  margin: 0 auto;
 }
-.group-12 {
-  position: absolute;
-  inset: 0;
-}
+
+/* Contenedor de la zona principal (elementos agrupados) */
 .group-9 {
   width: 332.5px;
   height: 543.87px;
-  position: static;
+  position: static;  /* Se deja igual para respetar la estructura original */
 }
+
+/* Elemento de fondo blanco con esquinas redondeadas */
 .rectangle-3 {
   background: #ffffff;
   border-radius: 15px;
-  width: 291.27px;
-  height: 543.87px;
+  width: 291.27px;         /* 87.6% aprox. de 332.5px */
+  height: 543.87px;        /* Igual a la altura de .group-9 */
   position: absolute;
-  left: 32.81px;
-  top: 41.02px;
+  left: 32.81px;           /* Aprox. 9.87% del ancho */
+  top: 41.02px;            /* Aprox. 6.26% del alto (655px) */
 }
+
+/* Contenedor de los botones (con sus imágenes y textos) */
 .botones {
   display: flex;
   flex-direction: column;
@@ -35,169 +43,123 @@
   justify-content: center;
   width: 332.5px;
   position: absolute;
-  left: 10px;
-  top: 180.47px;
+  left: 10px;              /* 3% aprox. del ancho */
+  top: 180.47px;           /* Aprox. 27.55% del alto */
 }
-.vivere-cono-men-con-bot-n-1 {
+
+/* ================== ESTILOS DE BOTONES ================== */
+/* Cada botón es un bloque que contiene la imagen (de fondo) y el texto */
+.vivere-cono-men-con-bot-n-1,
+.vivere-cono-delivery-con-bot-n-1-1,
+.vivere-cono-franquicias-con-bot-n-2,
+.vivere-cono-www-con-bot-n-1 {
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: center;
   justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
-  height: 48px;
-  position: relative;
+  width: 100%;        /* Toman el ancho completo del contenedor botones */
+  height: 48px;       /* Alto fijo según diseño */
+  position: relative; /* Para que los elementos internos con posicionamiento absoluto se refieran a este bloque */
   overflow: hidden;
 }
-.capa-2 {
-  flex-shrink: 0;
-  width: 332.5px;
-  height: 48px;
+
+/* Las imágenes que están dentro de los botones.
+   Se posicionan de forma absoluta para “cubrir” el botón según el diseño. */
+.capa-2,
+.capa-22,
+.capa-23,
+.capa-24 {
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 48px;
   overflow: visible;
 }
-.frame-18 {
+
+/* Los contenedores que agrupan el texto (y que ayudan a centrarlo) */
+.frame-18,
+.frame-17 {
   display: flex;
   flex-direction: row;
-  gap: 0px;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-  width: 210px;
+  width: 210px;       /* Valor tomado del diseño */
   height: 36px;
   position: relative;
-  aspect-ratio: 210/36;
+  aspect-ratio: 210 / 36;
 }
+
 .frame-8 {
   display: flex;
   flex-direction: row;
   gap: 10px;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
   height: 14px;
   position: relative;
 }
-.men-completo {
-  color: #ffffff;
-  text-align: left;
-  font-family: "Unbounded", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  position: relative;
-}
-.vivere-cono-delivery-con-bot-n-1-1 {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
-  height: 48px;
-  position: relative;
-  overflow: hidden;
-}
-.capa-22 {
-  flex-shrink: 0;
-  width: 332.5px;
-  height: 48px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  overflow: visible;
-}
-.frame-17 {
-  display: flex;
-  flex-direction: row;
-  gap: 0px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 210px;
-  height: 36px;
-  position: relative;
-  aspect-ratio: 210/36;
-}
-.contacto-delivery {
-  color: #ffffff;
-  text-align: left;
-  font-family: "Unbounded", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  position: relative;
-}
-.vivere-cono-franquicias-con-bot-n-2 {
-  padding: 14px 133px 14px 133px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
-  height: 48px;
-  position: relative;
-  overflow: hidden;
-}
-.capa-23 {
-  flex-shrink: 0;
-  width: 332.5px;
-  height: 48px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  overflow: visible;
-}
-.frame-172 {
-  display: flex;
-  flex-direction: row;
-  gap: 0px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 92.55px;
-  height: 15.87px;
-  position: relative;
-  aspect-ratio: 92.55/15.87;
-}
+
+/* Estilos para el texto dentro de los botones.
+   Se usa text-align: center para mantener el contenido centrado. */
+.men-completo,
+.contacto-delivery,
 .tu-franquicia {
   color: #ffffff;
-  text-align: left;
+  text-align: center;
   font-family: "Unbounded", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
   position: relative;
 }
+
+/* Último botón (con el sitio web) posee una estructura similar */
 .frame-22 {
   display: flex;
   flex-direction: column;
-  gap: 10px;
   align-items: center;
   justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
+  width: 100%;
   height: 48px;
   position: relative;
 }
 .group-8 {
-  flex-shrink: 0;
-  width: 332.5px;
-  height: 48px;
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 48px;
   overflow: visible;
 }
-.viverebeneok {
+.frame-173 {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 262px;
+  height: 44.91px;
+  position: relative;
+  aspect-ratio: 262 / 44.91;
+}
+.frame-82 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 262px;
+  height: 14px;
+  position: relative;
+  aspect-ratio: 262 / 14;
+}
+.viverebeneok{
   color: #ffffff;
-  text-align: left;
-  font-family: "-", sans-serif;
+  text-align: center;
+  font-family: "Unbounded", sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 700;
   position: relative;
 }
 .viverebeneok-span {
@@ -208,84 +170,38 @@
   font-family: "Unbounded", sans-serif;
   font-weight: 700;
 }
-.vivere-cono-www-con-bot-n-1 {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
-  height: 48px;
-  position: relative;
-  overflow: hidden;
+.www-viverebene-com-ar-span {
+  font-family: 'Unbounded', sans-serif;
+  font-weight: 300;
 }
-.capa-24 {
-  flex-shrink: 0;
-  width: 332.5px;
-  height: 48px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  overflow: visible;
-}
-.frame-173 {
-  padding: 0px 10px 0px 10px;
-  display: flex;
-  flex-direction: row;
-  gap: 0px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  width: 262px;
-  height: 44.91px;
-  position: relative;
-  aspect-ratio: 262/44.91;
-}
-.frame-82 {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 262px;
-  height: 14px;
-  position: relative;
-  aspect-ratio: 262/14;
+.www-viverebene-com-ar-span2 {
+  font-family: 'Unbounded', sans-serif;
+  font-weight: 700;
 }
 .www-viverebene-com-ar {
   color: #ffffff;
-  text-align: left;
-  font-family: "-", sans-serif;
+  text-align: center;
+  font-family: "Unbounded", sans-serif;
   font-size: 18px;
   font-weight: 400;
   position: relative;
 }
-.www-viverebene-com-ar-span {
-  font-family: "Unbounded", sans-serif;
-  font-weight: 300;
-}
-.www-viverebene-com-ar-span2 {
-  font-family: "Unbounded", sans-serif;
-  font-weight: 700;
-}
+
+/* ================== DEMÁS ELEMENTOS ================== */
 .vivere-vasito-2 {
   width: 70.4px;
   height: 70px;
   position: absolute;
   left: 256.5px;
   top: 6px;
-  aspect-ratio: 70.4/70;
+  aspect-ratio: 70.4 / 70;
 }
 .dise-o {
-  width: 99.99%;
-  height: 100.02%;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  right: 0.01%;
-  left: 0%;
-  bottom: -0.01%;
-  top: -0.02%;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 .vivere-clave-wifi-2 {
@@ -295,13 +211,12 @@
   left: 65.16px;
   top: 607.27px;
   overflow: hidden;
-  aspect-ratio: 222.18/17.73;
+  aspect-ratio: 222.18 / 17.73;
 }
 .capa-25 {
-  height: auto;
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 .vivere-nuestras-2 {
@@ -311,13 +226,12 @@
   left: 121.5px;
   top: 97px;
   overflow: hidden;
-  aspect-ratio: 106.2/31.24;
+  aspect-ratio: 106.2 / 31.24;
 }
 .capa-26 {
-  height: auto;
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 .vivere-estrellita-2 {
@@ -327,18 +241,18 @@
   left: 50.58px;
   top: 56.38px;
   overflow: hidden;
-  aspect-ratio: 13.23/13.51;
+  aspect-ratio: 13.23 / 13.51;
 }
 .capa-27 {
-  height: auto;
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
+
 .opciones {
   color: #298067;
-  text-align: left;
+  text-align: center;
   font-family: "Unbounded", sans-serif;
   font-size: 32px;
   font-weight: 700;
@@ -349,6 +263,7 @@
   align-items: center;
   justify-content: flex-start;
 }
+
 .group-1 {
   width: 141.61px;
   height: 50.71px;
@@ -364,4 +279,17 @@
   left: 270px;
   top: 576px;
   overflow: visible;
+}
+
+/* ========== RESPONSIVIDAD ========== */
+/* Para pantallas pequeñas (por ejemplo, móviles de menor ancho)
+   Se escala todo el contenedor de diseño de manera proporcional.
+   De esta forma se respeta la posición de las imágenes y el texto dentro de los botones. */
+@media (max-width: 360px) {
+  .android-compact-6 {
+    transform: scale(calc(100vw / 332.5));
+    transform-origin: top center;
+    /* Ajustamos la altura para que el contenedor escalado no genere scroll vertical innecesario */
+    height: calc(655px * (100vw / 332.5));
+  }
 }
