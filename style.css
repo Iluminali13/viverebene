@@ -299,11 +299,12 @@
    Se dejan las dimensiones originales y se centra el contenedor. */
 @media (min-width: 361px) and (max-width: 768px) {
   .android-compact-6 {
-    transform: none;
-    width: 360.5px;
+    transform: scale(calc(100vw / 700));
+    transform-origin: top center;
     height: 769px;
     margin: 0 auto;
   }
+
 
   /* Opcional: ajustar tamaños de fuente si es necesario */
   .men-completo,
