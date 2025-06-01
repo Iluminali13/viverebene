@@ -4,9 +4,11 @@
 }
 .android-compact-2 {
   background: #f4f4f2;
-  height: 917px;
+  height: 100vh;
   position: relative;
   overflow: hidden;
+  
+  
 }
 
 a {
